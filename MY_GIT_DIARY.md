@@ -28,4 +28,9 @@
 * `git branch` ➔ Saari local branches ki list dekhna (* active branch ke aage hota hai).
 * `git switch -c <branch-name>` ➔ Nayi branch banana AUR turant uspe jump (switch) karna.
 * `git switch <branch-name>` ➔ Kisi existing branch par switch karna.
-* `git checkout -b <branch-name>` ➔ Nayi branch banane ka purana tareeka (dono same kaam karte hain).
+
+---
+
+## 📍 Step 5: Merging & Cleaning Up Branches
+* `git merge <branch-name>` ➔ Dusri branch ke code ko apni current branch mein milana (Merge karne se pehle target branch e.g. `master` par switch hona zaroori hai).
+* `git branch -d <branch-name>` ➔ Merge ho chuki feature branch ko safely delete karna.
