@@ -32,5 +32,14 @@
 ---
 
 ## 📍 Step 5: Merging & Cleaning Up Branches
-* `git merge <branch-name>` ➔ Dusri branch ke code ko apni current branch mein milana (Merge karne se pehle target branch e.g. `master` par switch hona zaroori hai).
+* `git merge <branch-name>` ➔ Dusri branch ke code ko apni current branch mein milana.
 * `git branch -d <branch-name>` ➔ Merge ho chuki feature branch ko safely delete karna.
+
+---
+
+## 📍 Step 6: Merge Conflicts (Takraav ko Fix Karna)
+* **Conflict kab hota hai?** Jab 2 branches mein SAME file ki SAME line par alag-alag code likh diya jaye.
+* `<<<<<<< HEAD` ➔ Aapki current branch ka code.
+* `=======` ➔ Divider boundary.
+* `>>>>>>> branch-name` ➔ Doosri branch se aane wala code.
+* `git merge --abort` ➔ Agar merge mein fas gaye toh sab kuch cancel karke purani state par aana.
