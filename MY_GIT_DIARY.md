@@ -21,3 +21,11 @@
 * `git diff` ➔ Working directory ke unstaged badlav dekhna (Red = Deleted lines, Green = Added lines).
 * `git add .` ➔ Saari nayi aur modified files ko ek sath stage karna.
 * `git diff --staged` ➔ Staging area mein jo pack kiya hai uska diff dekhna.
+
+---
+
+## 📍 Step 4: Branching (Feature Isolation)
+* `git branch` ➔ Saari local branches ki list dekhna (* active branch ke aage hota hai).
+* `git switch -c <branch-name>` ➔ Nayi branch banana AUR turant uspe jump (switch) karna.
+* `git switch <branch-name>` ➔ Kisi existing branch par switch karna.
+* `git checkout -b <branch-name>` ➔ Nayi branch banane ka purana tareeka (dono same kaam karte hain).
