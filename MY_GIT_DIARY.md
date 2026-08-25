@@ -28,6 +28,7 @@
 * `git branch` ➔ Saari local branches ki list dekhna (* active branch ke aage hota hai).
 * `git switch -c <branch-name>` ➔ Nayi branch banana AUR turant uspe jump (switch) karna.
 * `git switch <branch-name>` ➔ Kisi existing branch par switch karna.
+* `git log --oneline --graph --all` ➔ Saari branches ka visual commit tree dekhna.
 
 ---
 
@@ -37,9 +38,10 @@
 
 ---
 
-## 📍 Step 6: Merge Conflicts (Takraav ko Fix Karna)
-* **Conflict kab hota hai?** Jab 2 branches mein SAME file ki SAME line par alag-alag code likh diya jaye.
-* `<<<<<<< HEAD` ➔ Aapki current branch ka code.
-* `=======` ➔ Divider boundary.
-* `>>>>>>> branch-name` ➔ Doosri branch se aane wala code.
-* `git merge --abort` ➔ Agar merge mein fas gaye toh sab kuch cancel karke purani state par aana.
+## 📍 Step 6: Remote Repositories & GitHub Collaboration
+* `git remote add origin <URL>` ➔ Apne local project ko GitHub ke online repo se jorna ('origin' nickname hota hai).
+* `git remote -v` ➔ Check karna kaunsa remote link connected hai.
+* `git push -u origin master` ➔ Local commits ko GitHub par upload karna (`-u` upstream permanently set karta hai).
+* `git push` ➔ Upstream set hone ke baad simple code upload karna.
+* `git pull origin master` ➔ GitHub se team ke naye commits download karke seedha merge karna.
+* `git fetch origin` ➔ GitHub se updates check/download karna bina local code ko disturb kiye.
