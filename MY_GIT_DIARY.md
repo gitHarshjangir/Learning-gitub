@@ -67,7 +67,21 @@
 
 ---
 
-## 📍 Step 9: Undoing Mistakes & Time Travel
+## 📍 Step 9: Undoing Mistakes & Staging Fixes
 * `git restore <file>` ➔ Unstaged badlaav ko mita kar file ko pichle commit wali sahi condition mein wapas laana.
 * `git restore --staged <file>` ➔ Staging area (box) se file ko bahar nikalna bina code delete kiye.
 * `git commit --amend -m "new message"` ➔ Last commit ke message ko modify/replace karna (clean commit history ke liye).
+
+---
+
+## 📍 Step 10: Temporary Code Locker (`git stash`)
+* `git stash` ➔ Adhoore/uncommitted code ko temporary secret locker mein daal kar working area clean karna.
+* `git stash pop` ➔ Locker se adhoora code wapas nikal kar file mein paste karna aur locker khali karna.
+* `git stash list` ➔ Locker mein pade saare stashes ki list dekhna.
+
+---
+
+## 📍 Step 11: Time Machine & Safe Rollback (`git revert` vs `git reset`)
+* `git revert <commit-hash>` ya `HEAD` ➔ Galti wale commit ko safely undo karna (naya reverse commit banta hai, history delete nahi hoti - 100% safe for GitHub).
+* `git reset --soft HEAD~1` ➔ Last commit ko undo karna lekin code ko Staging Area mein bacha ke rakhna.
+* `git reset --hard HEAD~1` ➔ Last commit aur code dono ko poori tarah mita dena (⚠️ Khatarnak).
