@@ -85,3 +85,27 @@
 * `git revert <commit-hash>` ya `HEAD` ➔ Galti wale commit ko safely undo karna (naya reverse commit banta hai, history delete nahi hoti - 100% safe for GitHub).
 * `git reset --soft HEAD~1` ➔ Last commit ko undo karna lekin code ko Staging Area mein bacha ke rakhna.
 * `git reset --hard HEAD~1` ➔ Last commit aur code dono ko poori tarah mita dena (⚠️ Khatarnak).
+
+---
+
+## 📍 Step 12: Productivity Shortcuts (`git aliases`)
+* `git config --global alias.st status` ➔ `git st` se status dekhna.
+* `git config --global alias.cm "commit -m"` ➔ `git cm "msg"` se commit karna.
+* `git config --global alias.br branch` ➔ `git br` se branch dekhna.
+* `git config --global alias.hist "log --oneline --graph --all"` ➔ `git hist` se visual tree graph dekhna.
+
+---
+
+## 📍 Step 13: Milestone Releases (`git tags`)
+* `git tag -a v1.0.0 -m "Release message"` ➔ Kisi milestone commit par official version tag lagana.
+* `git tag` ➔ Saare version tags ki list dekhna.
+* `git push origin --tags` ➔ Saare tags ko GitHub Releases par upload karna.
+
+---
+
+## 📍 Step 14: Open-Source Contribution Workflow (`Fork ➔ Clone ➔ PR`)
+1. **Fork:** Kisi dusre ki repository ke top-right par *Fork* button dabakar uski ek copy apne GitHub account mein save karna.
+2. **Clone:** Apni forked repo ko computer par download karna: `git clone <forked-url>`.
+3. **Branch & Code:** Nayi branch banana (`git switch -c fix-bug`), code fix karke commit karna.
+4. **Push:** Apni forked repo par push karna: `git push -u origin fix-bug`.
+5. **Open PR:** Original project owner ko *Pull Request* bhejna taaki woh aapka code accept kar sakein.
