@@ -64,3 +64,10 @@
 * `*.log` ➔ Saari log files ko ignore karna.
 * `node_modules/` ➔ Heavy libraries/packages folder ko ignore karna.
 * *Note:* Terminal par `(END)` se bahar nikalne ke liye `q` dabate hain.
+
+---
+
+## 📍 Step 9: Undoing Mistakes & Time Travel
+* `git restore <file>` ➔ Unstaged badlaav ko mita kar file ko pichle commit wali sahi condition mein wapas laana.
+* `git restore --staged <file>` ➔ Staging area (box) se file ko bahar nikalna bina code delete kiye.
+* `git commit --amend -m "new message"` ➔ Last commit ke message ko modify/replace karna (clean commit history ke liye).
