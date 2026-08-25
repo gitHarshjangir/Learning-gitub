@@ -40,8 +40,8 @@
 
 ## 📍 Step 6: Remote Repositories & GitHub Collaboration
 * `git remote add origin <URL>` ➔ Apne local project ko GitHub ke online repo se jorna ('origin' nickname hota hai).
-* `git remote -v` ➔ Check karna kaunsa remote link connected hai.
-* `git push -u origin master` ➔ Local commits ko GitHub par upload karna (`-u` upstream permanently set karta hai).
-* `git push` ➔ Upstream set hone ke baad simple code upload karna.
-* `git pull origin master` ➔ GitHub se team ke naye commits download karke seedha merge karna.
-* `git fetch origin` ➔ GitHub se updates check/download karna bina local code ko disturb kiye.
+* `git remote -v` ➔ Check karna kaunsa remote link (fetch/push) connected hai.
+* `git push -u origin <branch>` ➔ Local commits ko GitHub par upload karna (`-u` upstream set karta hai, agli baar sirf `git push` chalega).
+* `git fetch origin` ➔ GitHub se updates ki jaankari download karna bina local code ko chhede.
+* `git pull origin <branch>` ➔ GitHub ke naye commits download karke seedha current branch mein merge karna (`fetch + merge`).
+* `git clone <URL>` ➔ Kisi bhi public GitHub repo ka pura code aur history pehli baar apne computer par download karna.
