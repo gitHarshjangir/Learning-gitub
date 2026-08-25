@@ -55,3 +55,12 @@
 4. **GitHub PR:** Website par *Compare & Pull Request* ➔ *Create PR* ➔ *Merge pull request* karna.
 5. `git switch master` && `git pull origin master` ➔ Local master ko updated cloud code ke saath sync karna.
 6. `git branch -d feature/<name>` ➔ Kaam hone ke baad purani feature branch ko delete karna.
+
+---
+
+## 📍 Step 8: Ignoring Secrets & Heavy Files (`.gitignore`)
+* `.gitignore` ➔ Aisi text file jisme mention kiye gaye files/folders ko Git completely ignore kar deta hai.
+* `secret.env` ➔ Kisi specific secret password file ko ignore karna.
+* `*.log` ➔ Saari log files ko ignore karna.
+* `node_modules/` ➔ Heavy libraries/packages folder ko ignore karna.
+* *Note:* Terminal par `(END)` se bahar nikalne ke liye `q` dabate hain.
