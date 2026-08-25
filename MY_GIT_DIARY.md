@@ -45,3 +45,13 @@
 * `git fetch origin` ➔ GitHub se updates ki jaankari download karna bina local code ko chhede.
 * `git pull origin <branch>` ➔ GitHub ke naye commits download karke seedha current branch mein merge karna (`fetch + merge`).
 * `git clone <URL>` ➔ Kisi bhi public GitHub repo ka pura code aur history pehli baar apne computer par download karna.
+
+---
+
+## 📍 Step 7: Industry Feature-Branch & Pull Request (PR) Workflow
+1. `git switch -c feature/<name>` ➔ Naye feature ke liye alag branch banana.
+2. `git add .` & `git commit -m "feat: ..."` ➔ Feature ka commit lena.
+3. `git push -u origin feature/<name>` ➔ Feature branch ko GitHub par upload karna.
+4. **GitHub PR:** Website par *Compare & Pull Request* ➔ *Create PR* ➔ *Merge pull request* karna.
+5. `git switch master` && `git pull origin master` ➔ Local master ko updated cloud code ke saath sync karna.
+6. `git branch -d feature/<name>` ➔ Kaam hone ke baad purani feature branch ko delete karna.
